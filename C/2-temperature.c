@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+/*print Fahrenheit-Celcius table
+   for fahr = 0, 20, ..., 300 */
+
 int main() {
    int fahr, celcius;
    int lower, upper, step;
