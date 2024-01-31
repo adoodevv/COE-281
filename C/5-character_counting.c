@@ -4,7 +4,8 @@
 int main () {
    long nc;
    nc = 0;
-   while (getchar() != EOF)
+   while (getchar() != EOF) {
       ++nc; /* increment by one */
    printf("%1d\n", nc);
+   }
 }
