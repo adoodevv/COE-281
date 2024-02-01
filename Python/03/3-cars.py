@@ -10,10 +10,3 @@ print(cars)
 #length of list with len function
 cars = ['bmw', 'audi', 'toyota', 'subaru']
 print(len(cars))
-
-# if statements
-for car in cars:
-   if car == 'bmw':
-      print(car.upper())
-   else:
-      print(car.title())
