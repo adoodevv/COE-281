@@ -15,3 +15,14 @@ for name, language in favorite_languages.items():
 #looping through keys in a dictionary
 for name in favorite_languages.keys():
    print(name.title())
+
+#looping through a dictionary's keys in a particular order
+favorite_languages = {
+   'jen': 'python',
+   'sarah': 'c',
+   'edward': 'rust',
+   'phil': 'python',
+}
+
+for name in sorted(favorite_languages.keys()):
+   print(f"{name.title()}, thank you for taking the poll.")
