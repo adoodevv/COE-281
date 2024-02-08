@@ -26,3 +26,16 @@ favorite_languages = {
 
 for name in sorted(favorite_languages.keys()):
    print(f"{name.title()}, thank you for taking the poll.")
+
+# list in a dictionary
+favorite_languages = {
+   'jen': ['python', 'rust'],
+   'sarah': ['c'],
+   'edward': ['rust', 'go'],
+   'phil': ['python', 'haskell']
+}
+
+for name, languages in favorite_languages.items():
+   print(f"\n{name.title()}'s favorite languages are: ")
+   for language in languages:
+      print(f"\t{language}")
