@@ -1,4 +1,4 @@
-emails = ['joe@outlook.com', 'me@gmail.com', 'kofi@gmail.com']
+emails = ['Joe@outlook.com', 'ME@gmail.com', 'koFi@gmail.com']
 print(emails)
 
 emails.sort()
