@@ -14,3 +14,11 @@ completed_models = []
 
 print_models(unprinted_designs, completed_models)
 show_completed_models(completed_models)
+
+# make a copy of a list
+# function_name(list_name[:])
+
+hi = [1, 2, 3, 3]
+copy_hi = hi[:]
+
+print(f"original list is {hi} and copied list is {copy_hi}")
