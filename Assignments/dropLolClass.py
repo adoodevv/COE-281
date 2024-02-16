@@ -9,3 +9,19 @@ for new_user in new_users:
    else:
       print(f"{new_user} is available")
       index += 1
+
+
+#FizzBuzz
+for number in range(101):
+   print(number)
+   
+numbers = range(101)
+for number in numbers:
+   if (number % 3 == 0) and (number % 5 == 0):
+      print('FizzBuzz')
+   elif number % 3 == 0:
+      print('Fizz')
+   elif number % 5 == 0:
+      print('Buzz')
+   else:
+      print('none')
