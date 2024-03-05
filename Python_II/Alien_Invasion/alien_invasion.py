@@ -66,6 +66,9 @@ class AlienInvasion:
       self._check_fleet_edges()
       self.aliens.update()
 
+      if pygame.sprite.spritecollideany(self.ship, self.aliens):
+         print("Ship hit!!!")
+
    def _create_alien(self, x_position, y_position):
       new_alien = Alien(self)
       new_alien.x = x_position
@@ -119,8 +122,18 @@ class AlienInvasion:
          if bullet.rect.bottom <= 0:
             self.bullets.remove(bullet)
 
+      self._check_bullet_alien_collisions()
+
+
+      
+   def _check_bullet_alien_collisions(self):
       collisions = pygame.sprite.groupcollide(
          self.bullets, self.aliens, True, True)
+
+      if not self.aliens:
+         # Destroy existing bullets and create new fleet
+         self.bullets.empty()
+         self._create_fleet()
 
 if __name__ == '__main__':
    ai = AlienInvasion()
