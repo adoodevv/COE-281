@@ -119,6 +119,9 @@ class AlienInvasion:
          if bullet.rect.bottom <= 0:
             self.bullets.remove(bullet)
 
+      collisions = pygame.sprite.groupcollide(
+         self.bullets, self.aliens, True, True)
+
 if __name__ == '__main__':
    ai = AlienInvasion()
    ai.run_game()
