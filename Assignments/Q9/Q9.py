@@ -5,7 +5,8 @@ a = int(input("Enter the length of the adjacent side: "))
 
 def findAngle():
    angle = math.acos(a/c)
-   print(f"\nThe angle is {angle}")
+   angle = math.degrees(angle)
+   print(f"\nThe angle is {angle} degrees")
 
 def findAdjacent():
    b = math.sqrt(c**2 - a**2)
