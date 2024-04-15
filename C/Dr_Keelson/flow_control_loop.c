@@ -22,9 +22,25 @@ int main()
    
    // for loop
    int a;
+
    for (a = 0; a < 4; a++)
    {
       printf("%d\n", a);
+   }
+
+   // nested statements
+   int x = 10, y = 0;
+
+   while(x < 15) {
+      if(x % 2 == 0) {
+         y += x;
+      }
+      else
+      {
+         y--;
+      }
+      printf("%d\t", y);
+      x++;
    }
    
    return 0;
